@@ -1,0 +1,11 @@
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+@font-face{
+  font-family:"avenirblack";
+  src: url("Avenir-Black.woff") format("woff"),
+       url("Avenir-Black.ttf") format("truetype"),
+       url("Avenir-Black.eot") format("eot");
+}

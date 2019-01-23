@@ -1,0 +1,233 @@
+html,body{
+  background-color:#251B17;
+  min-height:100%;
+}
+text{
+  fill:#FFF;
+}
+
+.Family{
+  stroke:#C2085D;
+}
+.Geography{
+  stroke:#E65144;
+}
+.Contemporary{
+  stroke:#FD9025;
+}
+.Inspired{
+  stroke:#FFBF00;
+  stroke-dasharray:5, 5;
+}
+
+.Textiles{
+  fill:#48A4FF;
+}
+.Paintings{
+  fill: #006487;
+}
+.Sculpture{
+  fill:#438D00;
+}
+.Wood{
+  fill:#B20000;
+}
+.Photographs{
+  fill:#FF8000;
+}
+.Drawings{
+  fill:#FFDC73;
+}
+.Assemblages{
+  fill:#A3D900;
+}
+.Stone{
+  fill:#FFBFFF;
+}
+.Media{
+  fill:#C5A442;
+}
+.key{
+  margin-top:40px;
+  float:right;
+  width:200px;
+}
+
+.key > .swatch{
+  color:#fff;
+  display:block;
+  height:50px;
+}
+.key > .swatch:before{
+  content:" ";
+  width:20px;
+  height: 20px;
+  border-radius:50%;
+  border:2px solid #FFF;
+  float:left;
+  margin: 0 15px;
+}
+
+.Textiles:before{
+  background-color:#48A4FF;
+}
+.Paintings:before{
+  background-color:#006487;
+}
+.Sculpture:before{
+  background-color:#438D00;
+}
+.Wood:before{
+  background-color:#B20000;
+}
+.Photographs:before{
+  background-color:#FF8000;
+}
+.Drawings:before{
+  background-color:#FFDC73;
+}
+.Assemblages:before{
+  background-color:#A3D900;
+}
+.Media:before{
+  background-color:#C5A442;
+}
+.Stone:before{
+    background-color:#FFBFFF;
+}
+
+/*.arrow:after {
+  content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-top: 10px solid transparent;
+   border-bottom: 10px solid transparent;
+   border-right:10px solid #FFF;
+   top: 11px;
+   left: -10px;
+   z-index:10;
+}*/
+
+.tooltip{
+  width:400px;
+  height:auto;
+  display:block;
+  position:absolute;
+  padding:20px;
+  border:3px solid #666;
+  background:white;
+  opacity:.9;
+  border-radius:10px;
+  visibility:hidden;
+}
+
+.tooltip:after, .tooltip:before {
+	right: 100%;
+	top: 25px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tooltip:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #fff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.tooltip:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #666;
+	border-width: 14px;
+	margin-top: -14px;
+}
+
+.hidden{
+  display:none;
+}
+
+img{
+  float:right;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  margin-left:10px;
+  margin-bottom:10px;
+  margin-top:20px;
+  border:3px solid #666;
+}
+
+
+/* Toggle Switch */
+div.toggles{
+  float:left;
+  width:200px;
+  margin-top:40px;
+}
+div.viz{
+  float:left;
+}
+div.toggle{
+  display:block;
+  height: 60px;
+  width: 200px;
+}
+div.toggle span.toggle_label{
+  float:left;
+  color:#FFF;
+  margin-right:20px;
+}
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+  float:right;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 70px;
+	height: 30px;
+	background: grey;
+	display: block;
+	border-radius: 30px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 20px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #bada55;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 60px;
+}
+
+// centering
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}

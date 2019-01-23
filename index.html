@@ -1,0 +1,355 @@
+<!Doctype html>
+<html>
+<head>
+  <link href="style2.css" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="js/jquery.js"></script>
+  <script src="data.js"></script>
+  <link rel="stylesheet" href="fonts/Avenir/fonts.css"> <!-- Avenir -->
+	<link rel="stylesheet" href="fonts/Open_Sans/fonts.css"> <!-- opensans -->
+</head>
+<body>
+    <div class="backdrop"></div>
+  <div class="header">
+    <h1>Outliers and American Vanguard Art</h1>
+    <p>At the heart of this exhibition's presentation of nearly 90 artists are themes of
+    diversity and convergence that can be explored further in this interactive display.
+  Tap a thumbnail to learn more about the artist behind each featured work, and discover
+connections between artists usin the filters below.</p>
+  </div>
+  <div class="container">
+  <div class="menu">
+    <div class="outer_key">
+      <div class="key">
+        <p>Key</p>
+        <div class="key_boxes">
+        <div class="key_untrained circle"></div>
+        <p>Untrained</p>
+        </div>
+        <div class="key_boxes">
+        <div class="key_trained circle"></div>
+        <p>Trained</p>
+       </div>
+      </div>
+    </div>
+    <div class="toggles accordion">
+      <p>Filters</p>
+      <div class="panel">
+    <div class="toggle"><span class="toggle_label">Women Artists:</span><input class="inputs" name="toggle" type="checkbox" id="man" /><label for="man">Toggle</label></div>
+    <div class="toggle"><span class="toggle_label">Artists of Color:</span><input class="inputs" name="toggle" type="checkbox" id="white" /><label for="white">Toggle</label></div>
+    <div class="toggle"><span class="toggle_label">Southern Artists:</span><input class="inputs" name="toggle" type="checkbox" id="nosouth" /><label for="nosouth">Toggle</label></div>
+    <div class="toggle"><span class="toggle_label long_title">First-Generation<br>American Artists:</span><input class="inputs" name="toggle" type="checkbox" id="native" /><label for="native">Toggle</label></div>
+    <div class="toggle"><span class="toggle_label long_title">Whitney Biennial<br>Artists:</span><input class="inputs" name="toggle" type="checkbox" id="nowhitney" /><label for="nowhitney">Toggle</label></div>
+    <div class="toggle"><span class="toggle_label">High Museum Artists:</span> <input class="inputs" name="toggle" type="checkbox" id="nohigh" /><label for="nohigh">Toggle</label></div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+  <div class="col">
+    <div class="title">1st Wave<br>
+    <span class="date">(c. 1924&ndash;1943)</span></div>
+    <div class="dots">
+      <div id="traylor" class="untrained high color man south nowhitney native"><img src="images/thumbs/traylor.jpg" alt="Bill Traylor"></div>
+      <div id="bombois" class="untrained nohigh white man nosouth nowhitney native"><img src="images/thumbs/bombois.jpg" alt="Bombois"></div>
+      <div id="sheeler" class="trained high white man nosouth whitney native"><img src="images/thumbs/sheeler.jpg" alt="sheeler"></div>
+      <div id="peyronnet" class="untrained nohigh white man nosouth nowhitney native"><img src="images/thumbs/peyronnet.jpg" alt="peyronnet"></div>
+      <div id="hicks" class="untrained nohigh white man nosouth nowhitney native"><img src="images/thumbs/hicks.jpg" alt="hicks"></div>
+      <div id="nadelman" class="trained high white man nosouth nowhitney firstgen"><img src="images/thumbs/nadelman.jpg" alt="nadelman"></div>
+      <div id="stettheimer" class="trained high white woman nosouth whitney native"><img src="images/thumbs/stettheimer.jpg" alt="stettheimer"></div>
+      <div id="rousseau" class="untrained nohigh white man nosouth nowhitney native"><img src="images/thumbs/rousseau.jpg" alt="rousseau"></div>
+      <div id="bannarn" class="trained nohigh color man southern nowhitney native"><img src="images/thumbs/bannarn.jpg" alt="bannarn"></div>
+      <div id="pippin" class="untrained nohigh color man nosouth whitney native"><img src="images/thumbs/pippin.jpg" alt="pippin"></div>
+      <div id="lawrence" class="trained high color man nosouth whitney native"><img src="images/thumbs/lawrence.jpg" alt="lawrence"></div>
+      <div id="sobel" class="trained nohigh white woman nosouth nowhitney firstgen"><img src="images/thumbs/sobel.jpg" alt="sobel"></div>
+      <div id="flannagan" class="trained high white man nosouth whitney native"><img src="images/thumbs/flannagan.jpg" alt="flannagan"></div>
+      <div id="kane" class="untrained nohigh white man nosouth whitney firstgen"><img src="images/thumbs/kane.jpg" alt="kane"></div>
+      <div id="lopez" class="untrained nohigh color man nosouth nowhitney native"><img src="images/thumbs/lopez.jpg" alt="lopez"></div>
+      <div id="pickett" class="untrained nohigh white man nosouth nowhitney native"><img src="images/thumbs/pickett.jpg" alt="pickett"></div>
+      <div id="lebduska" class="untrained nohigh white man nosouth whitney firstgen"><img src="images/thumbs/lebduska.jpg" alt="lebduska"></div>
+      <div id="eilshemius" class="trained high white man nosouth nowhitney native"><img src="images/thumbs/eilshemius.jpg" alt="eilshemius"></div>
+      <div id="johnson" class="trained nohigh color man southern whitney native"><img src="images/thumbs/johnson.jpg" alt="johnson"></div>
+      <div id="hartley" class="trained high white man nosouth whitney native"><img src="images/thumbs/hartley.jpg" alt="hartley"></div>
+      <div id="hirshfield" class="untrained nohigh white man nosouth nowhitney firstgen"><img src="images/thumbs/hirshfield.jpg" alt="hirshfield"></div>
+      <div id="hayden" class="trained nohigh color man southern nowhitney native"><img src="images/thumbs/hayden.jpg" alt="hayden"></div>
+      <div id="sullivan" class="untrained nohigh white man nosouth nowhitney native"><img src="images/thumbs/sullivan.jpg" alt="sullivan"></div>
+      <div id="barela" class="untrained nohigh color man nosouth nowhitney native"><img src="images/thumbs/barela.jpg" alt="barela"></div>
+      <div id="louis" class="untrained nohigh white woman nosouth nowhitney native"><img src="images/thumbs/louis.jpg" alt="louis"></div>
+      <div id="edmondson" class="untrained high color man southern nowhitney native"><img src="images/thumbs/edmondson.jpg" alt="edmondson"></div>
+      <div id="wjohnson" class="trained nohigh color man southern nowhitney native"><img src="images/thumbs/johnson-2.jpg" alt="W. Johnson"></div>
+      <div id="zorach" class="trained high white man nosouth whitney firstgen"><img src="images/thumbs/zorach.jpg" alt="zorach"></div>
+      <div id="kuniyoshi" class="trained high color man nosouth whitney firstgen"><img src="images/thumbs/kuniyoshi.jpg" alt="kuniyoshi"></div>
+
+    </div>
+  </div>
+  <div class="col">
+    <div class="title">2nd Wave<br>
+    <span class="date">(c. 1968&ndash;1992)</span></div>
+    <div class="dots">
+      <div id="rossi" class="trained nohigh white woman nosouth whitney native"><img src="images/thumbs/rossi.jpg" alt="rossi"></div>
+      <div id="saar" class="trained high color woman nosouth whitney native"><img src="images/thumbs/saar.jpg" alt="saar"></div>
+      <div id="conner" class="trained high white man nosouth whitney native"><img src="images/thumbs/conner.jpg" alt="conner"></div>
+      <div id="ramberg" class="trained nohigh white woman nosouth whitney native"><img src="images/thumbs/ramberg.jpg" alt="ramberg"></div>
+      <div id="butler" class="untrained high color man southern nowhitney native"><img src="images/thumbs/butler.jpg" alt="butler"></div>
+      <div id="skyllas" class="untrained nohigh white man nosouth nowhitney firstgen"><img src="images/thumbs/skyllas.jpg" alt="skyllas"></div>
+      <div id="tolson" class="untrained high white man southern whitney native"><img src="images/thumbs/tolson.jpg" alt="tolson"></div>
+      <div id="pierce" class="untrained high color man southern nowhitney native"><img src="images/thumbs/pierce.jpg" alt="pierce"></div>
+      <div id="nilsson" class="trained nohigh white woman nosouth whitney native"><img src="images/thumbs/nilsson.jpg" alt="nilsson"></div>
+      <div id="westermann" class="trained nohigh white man nosouth whitney native"><img src="images/thumbs/westermann.jpg" alt="westermann"></div>
+      <div id="finster" class="untrained high white man southern nowhitney native"><img src="images/thumbs/finster.jpg" alt="finster"></div>
+      <div id="thomas" class="untrained high color man southern nowhitney native"><img src="images/thumbs/thomas.jpg" alt="thomas"></div>
+      <div id="howard" class="untrained nohigh white man southern nowhitney native"><img src="images/thumbs/howard.jpg" alt="howard"></div>
+      <div id="nutt" class="trained high white man nosouth whitney native"><img src="images/thumbs/nutt.jpg" alt="nutt"></div>
+      <div id="outterbridge" class="trained nohigh color man southern nowhitney native"><img src="images/thumbs/outterbridge.jpg" alt="outterbridge"></div>
+      <div id="yoakum" class="untrained high color man nosouth nowhitney native"><img src="images/thumbs/yoakum.jpg" alt="yoakum"></div>
+      <div id="ramirez" class="untrained high color man nosouth nowhitney firstgen"><img src="images/thumbs/ramirez.jpg" alt="ramirez"></div>
+      <div id="rowe" class="untrained high color woman southern nowhitney native"><img src="images/thumbs/rowe.jpg" alt="rowe"></div>
+      <div id="wentworth" class="untrained nohigh white man nosouth nowhitney native"><img src="images/thumbs/wentworth.jpg" alt="wentworth"></div>
+      <div id="brown" class="trained high white man southern whitney native"><img src="images/thumbs/brown.jpg" alt="brown"></div>
+      <div id="deforest" class="trained nohigh white man nosouth whitney native"><img src="images/thumbs/deforest.jpg" alt="deforest"></div>
+      <div id="doyle" class="untrained high color man southern nowhitney native"><img src="images/thumbs/doyle.jpg" alt="doyle"></div>
+      <div id="morgan" class="untrained high color woman southern nowhitney native"><img src="images/thumbs/morgan.jpg" alt="morgan"></div>
+      <div id="ashby" class="untrained nohigh color man southern nowhitney native"><img src="images/thumbs/ashby.jpg" alt="ashby"></div>
+      <div id="wiley" class="trained high white man nosouth whitney native"><img src="images/thumbs/wiley.jpg" alt="wiley"></div>
+      <div id="evans" class="untrained high color woman southern nowhitney native"><img src="images/thumbs/evans.jpg" alt="evans"></div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="title">3rd Wave<br>
+    <span class="date">(c. 1998&ndash;2013)</span></div>
+    <div class="dots">
+      <div id="loving" class="trained nohigh color man nosouth whitney native"><img src="images/thumbs/loving.jpg" alt="loving"></div>
+      <div id="shields" class="trained high white man nosouth whitney native"><img src="images/thumbs/shields.jpg" alt="shields"></div>
+      <div id="young" class="untrained high color woman southern nowhitney native"><img src="images/thumbs/young.jpg" alt="young"></div>
+      <div id="sherman" class="trained high white woman nosouth whitney native"><img src="images/thumbs/sherman.jpg" alt="sherman"></div>
+      <div id="bruenchenhein" class="untrained high white man nosouth nowhitney native"><img src="images/thumbs/breunchenhein.jpg" alt="Breunchenhein"></div>
+      <div id="bess" class="untrained nohigh white man southern whitney native"><img src="images/thumbs/bess.jpg" alt="bess"></div>
+      <div id="lankton" class="trained nohigh white woman nosouth whitney native"><img src="images/thumbs/lankton.jpg" alt="lankton"></div>
+      <div id="darger" class="untrained high white man nosouth nowhitney native"><img src="images/thumbs/darger.jpg" alt="darger"></div>
+      <div id="pindell" class="trained high color woman nosouth whitney native"><img src="images/thumbs/pindell.jpg" alt="pindell"></div>
+      <div id="benning" class="trained nohigh white man nosouth whitney native"><img src="images/thumbs/benning.jpg" alt="benning"></div>
+      <div id="castle" class="untrained high white man nosouth nowhitney native"><img src="images/thumbs/castle.jpg" alt="castle"></div>
+      <div id="stockholder" class="trained nohigh white woman nosouth whitney native"><img src="images/thumbs/stockholder.jpg" alt="stockholder"></div>
+      <div id="scott" class="untrained nohigh white woman nosouth nowhitney native"><img src="images/thumbs/scott.jpg" alt="scott"></div>
+      <div id="walker" class="trained high color woman southern whitney native"><img src="images/thumbs/walker.jpg" alt="walker"></div>
+      <div id="godie" class="untrained high white woman nosouth nowhitney native"><img src="images/thumbs/godie.jpg" alt="godie"></div>
+      <div id="holley" class="untrained high color man southern nowhitney native"><img src="images/thumbs/holley.jpg" alt="holley"></div>
+      <div id="simpson" class="trained high color woman nosouth whitney native"><img src="images/thumbs/simpson.jpg" alt="simpson"></div>
+      <div id="heilmann" class="trained high white woman nosouth whitney native"><img src="images/thumbs/heilmann.jpg" alt="heilmann"></div>
+      <div id="bendolph" class="untrained high color woman southern nowhitney native"><img src="images/thumbs/bendolph.jpg" alt="heilmann"></div>
+      <div id="mullican" class="trained nohigh white man nosouth whitney native"><img src="images/thumbs/mullican.jpg" alt="mullican"></div>
+      <div id="bartlett" class="untrained nohigh white man nosouth nowhitney native"><img src="images/thumbs/bartlett.jpg" alt="bartlett"></div>
+      <div id="shaver" class="trained nohigh white woman nosouth nowhitney native"><img src="images/thumbs/shaver.jpg" alt="shaver"></div>
+      <div id="purifoy" class="trained nohigh color man southern nowhitney native"><img src="images/thumbs/purifoy.jpg" alt="purifoy"></div>
+      <div id="tompkins" class="trained nohigh color woman nosouth whitney native"><img src="images/thumbs/tompkins.jpg" alt="tompkins"></div>
+      <div id="leonard" class="trained nohigh white woman nosouth whitney native"><img src="images/thumbs/leonard.jpg" alt="leonard"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- GENERIC MODAL -->
+<div id="modal" class="tooltip">
+  <div class="modal_content">
+
+  <a href="#close" title="Close" class="close"><img src="fonts/x.svg"></a>
+  <b>Generic Modal</b>
+  <div style="float:right;">
+    <div class="image"></div>
+  </div>
+  <p class="birthdate"></p>
+  <p class="deathdate"></p>
+
+  <span class="bio" style="display:block; padding-top:10px;">
+  <p>Here's some text. Bla bla bla.</p>
+ </span>
+  <span class="credit" style="display:block; padding-top:10px;"></span>
+  <div class="image_credit" style="padding-top:10px;"></div>
+</div>
+</div>
+
+
+<div id="update"></div>
+
+
+</body>
+<script>
+
+
+
+
+$(".toggle input").on('click touchstart', function (){
+  var atLeastOneIsChecked = $('input[name="toggle"]:checked').length > 0;
+  var toggled = [];
+  if(atLeastOneIsChecked){
+    $('input[name="toggle"]:checked').each(function(){
+      console.log($(this).attr('id'));
+      toggled.push($(this).attr('id'));
+      console.log('toggled = ' +toggled);
+      $('.dots div').each(function(){
+        $(this).removeClass('hidden');
+        for(var i=0; i < toggled.length; i++){
+          if($(this).hasClass(toggled[i])){
+            $(this).addClass('hidden');
+          }
+        }
+      });
+    });
+  }else{
+    $('.dots div').removeClass('hidden');
+  }
+
+});
+
+
+$('html').click(function(e){
+  if(e.target != $('.dots div')){
+    $('#modal').css('visibility', 'hidden');
+    $('.backdrop').css('visibility', 'hidden');
+    $( '.modal_content' ).fadeTo( 500, 0 );
+  }
+  // console.log(e.target);
+ });
+
+$('.dots div').click(function(e){
+  e.stopPropagation();
+  // var offset = $(this).offset();
+  var dot_id = $(this).attr("id");
+  console.log('dot id is: '+dot_id);
+  // console.log("click is at " + offset.left + "," + offset.top +" of document");
+
+    $('#modal').css('visibility', 'visible');
+    $('.backdrop').css('visibility','visible');
+    $( '.modal_content' ).fadeTo( 500, 1 );
+
+
+// var data = JSON.parse(json);
+
+    // jQuery.getJSON('data.json',function(data){
+
+    var title =
+    jQuery.each(data, function(key,val){
+      if(val.id == dot_id){
+      title =  val.name;
+      }
+    $('#modal b').html(title);
+  });
+
+    var bio =
+    jQuery.each(data, function(k,v){
+      if(v.id == dot_id){
+      bio =  v.bio;
+      }
+    $('#modal .bio').html(bio);
+    });
+
+    var credit =
+    jQuery.each(data, function(c,l){
+      if(l.id == dot_id){
+      if(l.credit){
+      credit =  "Excerpted from: " + l.credit;
+    }else{
+      credit = "";
+    }
+    }
+    $('#modal .credit').html(credit);
+    });
+
+    var bdate =
+    jQuery.each(data, function(b,c){
+      if(c.id == dot_id){
+      if(c.birth_date){
+      bdate =  c.birth_date;
+    }else{
+      bdate = "";
+    }
+    }
+    $('#modal .birthdate').html(bdate);
+    });
+
+    var ddate =
+    jQuery.each(data, function(b,c){
+      if(c.id == dot_id){
+      if(c.death_date){
+      ddate =  c.death_date;
+    }else{
+      ddate = "";
+    }
+    }
+    $('#modal .deathdate').html(ddate);
+    });
+
+
+    var image =
+    jQuery.each(data, function(i,p){
+      if(p.id == dot_id){
+      if(p.image){
+      image =  p.image;
+    }else{
+      image = "";
+    }
+    }
+    $('#modal .image').html("<img src=\""+image+"\">");
+    });
+
+    var image_credit =
+    jQuery.each(data, function(x,y){
+      if(y.id == dot_id){
+      if(y.image_credit){
+      image_credit = "Image credit: " + y.image_credit;
+    }else{
+      image_credit = "";
+    }
+    }
+    $('#modal .image_credit').html(image_credit);
+    });
+
+// });
+
+});
+
+jQuery( document ).ready(function(){
+  //ACCORDIONS
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+          console.log('this is: ' +this);
+        this.classList.toggle("active");
+        var panel = this.children[1];
+          console.log('panel is: ' +panel);
+
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+    if(jQuery(window).width() < 640) {
+        console.log('i am a small screen');
+        jQuery('.dots div').on('click', function(){
+          console.log('hello');
+          jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+       });
+    }
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+      console.log('i am a small screen');
+      jQuery('.dots div').on('click', function(){
+        console.log('hello');
+        jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+  }
+
+
+});
+
+
+</script>
+</html>

@@ -1,0 +1,10 @@
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+@font-face{
+  font-family:"opensans";
+  src: url('opensans-regular-webfont.woff') format('woff'),
+       url("OpenSans.ttf") format("truetype"),
+}
