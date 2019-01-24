@@ -567,18 +567,18 @@ body {
 
  .accordion:after {
      content: '+';
-     font-size:2.5rem;
+     font-size:2rem;
      /* margin: -24px 35px 0 0; */
      position:absolute;
-     top:8px;
+     top:12px;
      left:87%;
  }
  .accordion.active:after {
      content: '–';
-     font-size:2.5rem;
+     font-size:2rem;
      /* margin: -24px 35px 0 0; */
      position:absolute;
-     top:8px;
+     top:12px;
      left:87%;
  }
 
