@@ -1,0 +1,8 @@
+############################
+# Project Specific Ignores #
+############################
+
+#Add any ignores specific to this project here.
+
+fonts
+images
