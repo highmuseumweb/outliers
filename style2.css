@@ -441,6 +441,18 @@ body {
     margin:0;
     width:100%;
   }
+  .key_boxes{
+    float:left;
+    width:90px;
+    text-align:center;
+    margin-left:50px;
+  }
+  .key_boxes:last-child{
+      margin-left: 0;
+  }
+  .key > p{
+    float:left;
+  }
   div.key{
     float:left;
     position:relative;
@@ -449,6 +461,7 @@ body {
     margin:0;
     border-bottom:0;
     padding:25px 25px 0 25px;
+    height:auto;
   }
   div.toggles{
     float:left;
@@ -554,6 +567,14 @@ body {
 
  .accordion:after {
      content: '+';
+     font-size:2.5rem;
+     /* margin: -24px 35px 0 0; */
+     position:absolute;
+     top:8px;
+     left:87%;
+ }
+ .accordion.active:after {
+     content: '–';
      font-size:2.5rem;
      /* margin: -24px 35px 0 0; */
      position:absolute;
